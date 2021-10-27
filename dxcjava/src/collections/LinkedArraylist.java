@@ -6,17 +6,21 @@ public class LinkedArraylist {
 	
 	public static void main(String args[]){  
 		  
-		  LinkedList<String> al=new LinkedList<String>();  
-		  al.add("priya");  
-		  al.add("amar");  
-		  al.add("priya");  
-		  al.add("krish");  
-		  al.add("guru");
-		  al.add("prasad");
-		  Iterator<String> itr=al.iterator();  
-		  while(itr.hasNext()){  
-		   System.out.println(itr.next());  
-		  }  
+		List<String> al=new ArrayList<String>();//creating arraylist    
+		  al.add("Ravi");//adding object in arraylist    
+		  al.add("Vijay");    
+		  al.add("Ravi");    
+		  al.add("Ajay");    
+		    
+		  List<String> al2=new LinkedList<String>();//creating linkedlist    
+		  al2.add("James");//adding object in linkedlist    
+		  al2.add("Serena");    
+		  al2.add("Swati");    
+		  al2.add("Junaid");    
+		    
+		  System.out.println("arraylist: "+al);  
+		  System.out.println("linkedlist: "+al2);  
+		 }    
 		 }  
 
-}
+
