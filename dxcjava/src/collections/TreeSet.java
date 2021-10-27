@@ -1,18 +1,20 @@
 package collections;
 import java.util.*;  
 public class TreeSet {
-	public static void main(String args[]){  
-		  //Creating and adding elements  
-		  TreeSet<String> al=new TreeSet<String>();  
-		  al.add("Ravi");  
-		  al.add("Vijay");  
-		  al.add("Ravi");  
-		  al.add("Ajay");  
-		  //Traversing elements  
-		  Iterator<String> itr=al.iterator();  
-		  while(itr.hasNext()){  
-		   System.out.println(itr.next());  
-		  }  
+	class TreeSet2{  
+		 public static void main(String args[]){  
+		 TreeSet<abc> set=new TreeSet<abc>();  
+		         set.add("Ravi");  
+		         set.add("Vijay");  
+		         set.add("Ajay");  
+		         System.out.println("Traversing element through Iterator in descending order");  
+		         Iterator i=set.descendingIterator();  
+		         while(i.hasNext())  
+		         {  
+		             System.out.println(i.next());  
+		         }  
+		           
 		 }  
-	
+		}   
+		 
 }
