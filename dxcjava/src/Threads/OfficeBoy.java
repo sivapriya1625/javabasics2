@@ -1,19 +1,20 @@
 package Threads;
 
-public class OfficeBoy {
-	public static void main(String[] args) {
+public class OfficeBoy extends Thread{
 
-		FeeThread feeThread = new FeeThread();
-		feeThread.start();
-		OfficeBoy ramu = new OfficeBoy();
-		ramu.start();
-
-
-	}
-
-	private void start() {
+	@Override
+	public void run() {
 		// TODO Auto-generated method stub
-		
+		super.run();
+
+		try {
+			Thread.sleep(3000);
+			System.out.println("getting water");
+
+		} catch (InterruptedException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
 	}
 
 }

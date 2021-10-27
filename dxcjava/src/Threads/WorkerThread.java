@@ -1,27 +1,29 @@
 package Threads;
 
-import java.util.concurrent.ExecutorService;
-import java.util.concurrent.Executors;
+public class WorkerThread implements Runnable {
+	String message;
 
-public class WorkerThread {
 
-	public WorkerThread(String string) {
-		// TODO Auto-generated constructor stub
+
+
+	public WorkerThread(String msg) {
+		message = msg;
 	}
 
-	public static void main(String[] args) {
-		//hiring 5 people
-		ExecutorService executorService = Executors.newFixedThreadPool(5);
+	@Override
+	public void run() {
+		System.out.println(Thread.currentThread().getName() +":--i am working on --  "+message);
+		processMessage();
+		System.out.println("i am done with "+message+" thread name is "+ Thread.currentThread().getName());
+	}
 
-		for(int i=0; i<10; i++) {
-			Runnable worker = (Runnable) new WorkerThread("job no "+i);
-			executorService.execute(worker);
+	private void processMessage() {
+		try {
+			Thread.sleep(200);
+		} catch (InterruptedException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
 		}
-
-		executorService.shutdown();
-
 	}
 
-
-	}
-
+}
