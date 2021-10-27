@@ -1,7 +1,6 @@
 package Threads;
 
-public class Nocprocess {
-
+public class OfficeBoy {
 	public static void main(String[] args) {
 
 		FeeThread feeThread = new FeeThread();
@@ -11,6 +10,10 @@ public class Nocprocess {
 
 
 	}
-	
-	
+
+	private void start() {
+		// TODO Auto-generated method stub
+		
+	}
+
 }
