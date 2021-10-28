@@ -1,15 +1,20 @@
 package basics;
 
 public class Calculator {
-	 int add(int a, int b) {
+	int add(int a, int b) {
+		return a+b;
+	}
 
-			int c = a+b;
-			System.out.println("Calculator-- add--"+c);
+	int sub(int a, int b) {
+		return a-b;
+	}
 
-			return c;
+	int mul(int a, int b) {
+		return a*b;
+	}
 
-		}
+	int div(int a, int b) {
+		return a/b;
+	}
 
-		void sub(int a, int b) { 
-}
 }
