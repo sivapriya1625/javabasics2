@@ -1,30 +1,32 @@
 package basics;
 
-
-/**
- * default constructor -- harshita
- */
-
 public class Student {
+	int age; // 
+
 	private String name;
-	private int age;
 
-	/**
-	 * lahari constructor
-	 * @param name
-	 */
-	public Student(String name) {
+	static String COLLEGE_NAME = "IIT";
+
+	public String getName() {
+		return getName();
+	}
+
+	public void setName(String name) {
 		this.name = name;
 	}
 
-	/**
-	 * this is sathvika constructor
-	 * @param name
-	 * @param age
-	 */
-	public Student(String name, int age) {
-		super();
-		this.name = name;
-		this.age = age+2;
+	public int getAge() {
+		return age;
 	}
+
+	public void setAge(int age) {
+		this.age = age;
+	}
+
+	//Student[] students = new Student[100];
+
+
+
 }
+
+	
