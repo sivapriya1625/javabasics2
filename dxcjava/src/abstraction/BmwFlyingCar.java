@@ -20,6 +20,16 @@ public class BmwFlyingCar extends FlyingCar {
 
 	}
 
+  static int add(int i, int j) {
+		// TODO Auto-generated method stub
+		return 0;
+	}
+
+public static boolean isEligibletoVote(int i) {
+	// TODO Auto-generated method stub
+	return false;
+}
+
 }
 
 
