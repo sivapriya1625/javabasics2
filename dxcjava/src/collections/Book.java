@@ -13,7 +13,7 @@ public class Book {
 	    this.publisher = publisher;  
 	    this.quantity = quantity;  
 	}  
-	public class ListExample5 {  
+	public static class ListExample5 {  
 	public static void main(String[] args) {  
 	    //Creating list of Books  
 	    List<Book> list=new ArrayList<Book>();  
