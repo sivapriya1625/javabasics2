@@ -1,6 +1,6 @@
 package design.patterns.factory;
 
-class  InstitutionalPlan extends Plan{  
+class  InstitutionalPlan extend Plan{  
    //@override  
     public void getRate(){   
         rate=5.50;  

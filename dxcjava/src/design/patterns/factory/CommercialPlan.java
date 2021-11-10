@@ -3,6 +3,7 @@ package design.patterns.factory;
 class  CommercialPlan extends Plan{  
 	//@override   
 	public void getRate(){   
-		rate=7.50;  
+		double rate = 7.50;  
 	}   
-	/end of CommercialPlan class.  
+	/Enum of CommercialPlan class.
+}
